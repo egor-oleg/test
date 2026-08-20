@@ -27,7 +27,7 @@ How well a specific machine works comes down to what the mod exposes to the CC:T
 
 | Interface | Steps |
 | :--- | :--- |
-| <a href="/images/2026-08-09-20-36-05.png"><img src="/images/2026-08-09-20-36-05.png" width="380" /></a> | **Install & tag**<br><br>Drop `computer/startup.lua` onto the Advanced Computer, `turtle/startup.lua` onto the turtle, then `reboot`. On the monitor, open the **NETWORK** tab and tag your peripherals: storages → `[VAULT]`, staging barrel → `[T.BOX]`, crafting turtles → `[TURTLE]`, fluid tanks → `[TNK]` (optional). |
+| <details><summary><img src="/images/2026-08-09-20-36-05.png" width="380" /></summary><div align="center"><br><img src="/images/2026-08-09-20-36-05.png" width="900" /></div></details> | **Install & tag**<br><br>Drop `computer/startup.lua` onto the Advanced Computer, `turtle/startup.lua` onto the turtle, then `reboot`. On the monitor, open the **NETWORK** tab and tag your peripherals: storages → `[VAULT]`, staging barrel → `[T.BOX]`, crafting turtles → `[TURTLE]`, fluid tanks → `[TNK]` (optional). |
 
 ---
 
@@ -35,11 +35,11 @@ How well a specific machine works comes down to what the mod exposes to the CC:T
 
 | Interface & Setup | Step-by-Step Instructions |
 | :--- | :--- |
-| <a href="/images/2026-08-09-20-26-45.png"><img src="/images/2026-08-09-20-26-45.png" width="380" /></a> | **3x3 grid recipe**<br><br>Lay ingredients in the 3x3 center of T.BOX, then `+RECIPES → TURTLE → SCAN`. |
-| <a href="/images/2026-08-09-20-27-09.png"><img src="/images/2026-08-09-20-27-09.png" width="380" /></a> | **Machine recipe**<br><br>Place ingredients in T.BOX, select the machine on the computer, then `+RECIPES → MACHINES → SCAN`. |
-| <a href="/images/2026-08-09-20-30-35.png"><img src="/images/2026-08-09-20-30-35.png" width="380" /></a> | **Fluid / hybrid recipe**<br><br>Solid items go into T.BOX, fluid type and mB volume are typed on the computer, then `+RECIPES → FLUID → SCAN`. |
-| <a href="/images/2026-08-09-20-32-34.png"><img src="/images/2026-08-09-20-32-34.png" width="380" /></a> | **Alternatives (+ALT)**<br><br>If an item already has a recipe, you can add another one as `+ALT`. At craft time the alts are checked top to bottom, first one that matches the stock is picked. |
-| <a href="/images/2026-08-09-20-34-39.png"><img src="/images/2026-08-09-20-34-39.png" width="380" /></a> | **Editing**<br><br>`[E]` in the recipes tab lets you swap the machine for a recipe, or reassign a whole machine tag across every saved recipe at once. |
+| <details><summary><img src="/images/2026-08-09-20-26-45.png" width="380" /></summary><div align="center"><br><img src="/images/2026-08-09-20-26-45.png" width="900" /></div></details> | **3x3 grid recipe**<br><br>Lay ingredients in the 3x3 center of T.BOX, then `+RECIPES → TURTLE → SCAN`. |
+| <details><summary><img src="/images/2026-08-09-20-27-09.png" width="380" /></summary><div align="center"><br><img src="/images/2026-08-09-20-27-09.png" width="900" /></div></details> | **Machine recipe**<br><br>Place ingredients in T.BOX, select the machine on the computer, then `+RECIPES → MACHINES → SCAN`. |
+| <details><summary><img src="/images/2026-08-09-20-30-35.png" width="380" /></summary><div align="center"><br><img src="/images/2026-08-09-20-30-35.png" width="900" /></div></details> | **Fluid / hybrid recipe**<br><br>Solid items go into T.BOX, fluid type and mB volume are typed on the computer, then `+RECIPES → FLUID → SCAN`. |
+| <details><summary><img src="/images/2026-08-09-20-32-34.png" width="380" /></summary><div align="center"><br><img src="/images/2026-08-09-20-32-34.png" width="900" /></div></details> | **Alternatives (+ALT)**<br><br>If an item already has a recipe, you can add another one as `+ALT`. At craft time the alts are checked top to bottom, first one that matches the stock is picked. |
+| <details><summary><img src="/images/2026-08-09-20-34-39.png" width="380" /></summary><div align="center"><br><img src="/images/2026-08-09-20-34-39.png" width="900" /></div></details> | **Editing**<br><br>`[E]` in the recipes tab lets you swap the machine for a recipe, or reassign a whole machine tag across every saved recipe at once. |
 
 ---
 
@@ -47,11 +47,11 @@ How well a specific machine works comes down to what the mod exposes to the CC:T
 
 | Interface | Description |
 | :--- | :--- |
-| <a href="/images/2026-08-09-20-48-33.png"><img src="/images/2026-08-09-20-48-33.png" width="380" /></a> | **Parallel execution**<br><br>When you request an item, A.E.G.I.S. first looks at what's already in storage, then goes after the missing ingredients. Parts of the job that don't depend on each other can run at the same time if there are free machines. The header shows `parallel X` for active sub-tasks. |
-| <a href="/images/2026-08-09-20-48-13.png"><img src="/images/2026-08-09-20-48-13.png" width="380" /></a> | **Multi-machine batching (`pm3`)**<br><br>For recipes with probabilistic outputs the system just keeps feeding ingredients until the requested count is reached. `pm3` on a task means 3 machines are working on it together. |
-| <a href="/images/2026-08-09-20-50-54.png"><img src="/images/2026-08-09-20-50-54.png" width="380" /></a> | **Queue**<br><br>You can queue several crafts at once. If one runs out of resources it gets a warning, stays in the queue, and the next order starts. |
-| <a href="/images/2026-08-09-21-13-50.png"><img src="/images/2026-08-09-21-13-50.png" width="380" /></a> | **Tools**<br><br>GT-style durability tools (saws, hammers, files) are supported. If a tool breaks mid-craft, A.E.G.I.S. crafts a replacement first, then resumes the parent job. |
-| <a href="/images/2026-08-09-20-44-09.png"><img src="/images/2026-08-09-20-44-09.png" width="380" /></a> | **Cancel / cleanup**<br><br>Output slots are cleared before a sub-task and again on finish. Pressing `CANCEL` stops the current craft and dumps output slots to vaults. It can't always pull from input slots though — some mods block that (see limitations). |
+| <details><summary><img src="/images/2026-08-09-20-48-33.png" width="380" /></summary><div align="center"><br><img src="/images/2026-08-09-20-48-33.png" width="900" /></div></details> | **Parallel execution**<br><br>When you request an item, A.E.G.I.S. first looks at what's already in storage, then goes after the missing ingredients. Parts of the job that don't depend on each other can run at the same time if there are free machines. The header shows `parallel X` for active sub-tasks. |
+| <details><summary><img src="/images/2026-08-09-20-48-13.png" width="380" /></summary><div align="center"><br><img src="/images/2026-08-09-20-48-13.png" width="900" /></div></details> | **Multi-machine batching (`pm3`)**<br><br>For recipes with probabilistic outputs the system just keeps feeding ingredients until the requested count is reached. `pm3` on a task means 3 machines are working on it together. |
+| <details><summary><img src="/images/2026-08-09-20-50-54.png" width="380" /></summary><div align="center"><br><img src="/images/2026-08-09-20-50-54.png" width="900" /></div></details> | **Queue**<br><br>You can queue several crafts at once. If one runs out of resources it gets a warning, stays in the queue, and the next order starts. |
+| <details><summary><img src="/images/2026-08-09-21-13-50.png" width="380" /></summary><div align="center"><br><img src="/images/2026-08-09-21-13-50.png" width="900" /></div></details> | **Tools**<br><br>GT-style durability tools (saws, hammers, files) are supported. If a tool breaks mid-craft, A.E.G.I.S. crafts a replacement first, then resumes the parent job. |
+| <details><summary><img src="/images/2026-08-09-20-44-09.png" width="380" /></summary><div align="center"><br><img src="/images/2026-08-09-20-44-09.png" width="900" /></div></details> | **Cancel / cleanup**<br><br>Output slots are cleared before a sub-task and again on finish. Pressing `CANCEL` stops the current craft and dumps output slots to vaults. It can't always pull from input slots though — some mods block that (see limitations). |
 
 ---
 
@@ -59,10 +59,10 @@ How well a specific machine works comes down to what the mod exposes to the CC:T
 
 | Interface | Description |
 | :--- | :--- |
-| <a href="./images/2026-08-09-20-37-29.png"><img src="./images/2026-08-09-20-37-29.png" width="380" /></a> | **Auto-grouping**<br><br>Machines that share a peripheral name auto-form a pool, so you don't have to configure anything for the usual case. |
-| <a href="./images/2026-08-09-20-39-38.png"><img src="./images/2026-08-09-20-39-38.png" width="380" /></a> | **Custom groups**<br><br>You can also group machines manually — e.g. split Create Depots into `Depot Forge` vs `Depot Press`. If you add a machine to a custom group, exclude it from auto-grouping, otherwise it ends up in both. |
-| <a href="./images/2026-08-09-20-25-28.png"><img src="./images/2026-08-09-20-25-28.png" width="380" /></a> | **Exclusions & suffixes**<br><br>Individual machines can be excluded from a pool, or given a display suffix (`SUF`) in the NETWORK tab without breaking pooling. |
-| <a href="/images/2026-08-09-20-20-44.png"><img src="/images/2026-08-09-20-20-44.png" width="380" /></a> | **Multiblocks**<br><br>Multiblocks with separate input and output hatches are supported. |
+| <details><summary><img src="./images/2026-08-09-20-37-29.png" width="380" /></summary><div align="center"><br><img src="./images/2026-08-09-20-37-29.png" width="900" /></div></details> | **Auto-grouping**<br><br>Machines that share a peripheral name auto-form a pool, so you don't have to configure anything for the usual case. |
+| <details><summary><img src="./images/2026-08-09-20-39-38.png" width="380" /></summary><div align="center"><br><img src="./images/2026-08-09-20-39-38.png" width="900" /></div></details> | **Custom groups**<br><br>You can also group machines manually — e.g. split Create Depots into `Depot Forge` vs `Depot Press`. If you add a machine to a custom group, exclude it from auto-grouping, otherwise it ends up in both. |
+| <details><summary><img src="./images/2026-08-09-20-25-28.png" width="380" /></summary><div align="center"><br><img src="./images/2026-08-09-20-25-28.png" width="900" /></div></details> | **Exclusions & suffixes**<br><br>Individual machines can be excluded from a pool, or given a display suffix (`SUF`) in the NETWORK tab without breaking pooling. |
+| <details><summary><img src="/images/2026-08-09-20-20-44.png" width="380" /></summary><div align="center"><br><img src="/images/2026-08-09-20-20-44.png" width="900" /></div></details> | **Multiblocks**<br><br>Multiblocks with separate input and output hatches are supported. |
 
 ---
 
@@ -70,9 +70,9 @@ How well a specific machine works comes down to what the mod exposes to the CC:T
 
 | Interface | Description |
 | :--- | :--- |
-| <a href="/images/2026-08-09-20-16-47.png"><img src="/images/2026-08-09-20-16-47.png" width="380" /></a> | **Hybrid & sequential pouring**<br><br>Solid+fluid recipes work, mB is tracked, and multiple fluids can be poured in sequence. For machines with more than one fluid hatch, route the fluids through transfer tanks with hatches attached. |
-| <a href="/images/2026-08-09-20-07-57.png"><img src="/images/2026-08-09-20-07-57.png" width="380" /></a> | **Fluid stock & OPTIMIZE**<br><br>The stock view shows how much of each fluid is in which tank. `OPTIMIZE` scans, merges and defrags fluid storage. |
-| <a href="/images/2026-08-09-20-06-57.png"><img src="/images/2026-08-09-20-06-57.png" width="380" /></a> | **KEEP-FLUID**<br><br>`KEEP-FLUID` sets an automated mB buffer for a fluid, similar to KEEP for items. |
+| <details><summary><img src="/images/2026-08-09-20-16-47.png" width="380" /></summary><div align="center"><br><img src="/images/2026-08-09-20-16-47.png" width="900" /></div></details> | **Hybrid & sequential pouring**<br><br>Solid+fluid recipes work, mB is tracked, and multiple fluids can be poured in sequence. For machines with more than one fluid hatch, route the fluids through transfer tanks with hatches attached. |
+| <details><summary><img src="/images/2026-08-09-20-07-57.png" width="380" /></summary><div align="center"><br><img src="/images/2026-08-09-20-07-57.png" width="900" /></div></details> | **Fluid stock & OPTIMIZE**<br><br>The stock view shows how much of each fluid is in which tank. `OPTIMIZE` scans, merges and defrags fluid storage. |
+| <details><summary><img src="/images/2026-08-09-20-06-57.png" width="380" /></summary><div align="center"><br><img src="/images/2026-08-09-20-06-57.png" width="900" /></div></details> | **KEEP-FLUID**<br><br>`KEEP-FLUID` sets an automated mB buffer for a fluid, similar to KEEP for items. |
 
 ---
 
@@ -80,9 +80,9 @@ How well a specific machine works comes down to what the mod exposes to the CC:T
 
 | Interface | Description |
 | :--- | :--- |
-| <a href="./images/2026-08-09-20-05-35.png"><img src="./images/2026-08-09-20-05-35.png" width="380" /></a> | **Threshold → target**<br><br>KEEP uses two numbers per item: a threshold and a target. Crafting starts only when stock drops below the threshold and stops once it reaches the target. So the system doesn't re-trigger a craft after every single item consumed. |
-| <a href="/images/2026-08-09-20-51-53.png"><img src="/images/2026-08-09-20-51-53.png" width="380" /></a> | **Priority order**<br><br>KEEP entries run in the order you set them — higher entries first. |
-| <a href="/images/2026-08-09-21-00-11.png"><img src="/images/2026-08-09-21-00-11.png" width="380" /></a> | **Idle execution**<br><br>KEEP runs automatically when the system has been idle for ~3 minutes and no manual craft is active. Can be paused at any time. |
+| <details><summary><img src="./images/2026-08-09-20-05-35.png" width="380" /></summary><div align="center"><br><img src="./images/2026-08-09-20-05-35.png" width="900" /></div></details> | **Threshold → target**<br><br>KEEP uses two numbers per item: a threshold and a target. Crafting starts only when stock drops below the threshold and stops once it reaches the target. So the system doesn't re-trigger a craft after every single item consumed. |
+| <details><summary><img src="/images/2026-08-09-20-51-53.png" width="380" /></summary><div align="center"><br><img src="/images/2026-08-09-20-51-53.png" width="900" /></div></details> | **Priority order**<br><br>KEEP entries run in the order you set them — higher entries first. |
+| <details><summary><img src="/images/2026-08-09-21-00-11.png" width="380" /></summary><div align="center"><br><img src="/images/2026-08-09-21-00-11.png" width="900" /></div></details> | **Idle execution**<br><br>KEEP runs automatically when the system has been idle for ~3 minutes and no manual craft is active. Can be paused at any time. |
 
 ---
 
@@ -90,9 +90,9 @@ How well a specific machine works comes down to what the mod exposes to the CC:T
 
 | Interface | Description |
 | :--- | :--- |
-| <a href="/images/2026-08-09-20-04-36.png"><img src="/images/2026-08-09-20-04-36.png" width="380" /></a> | **STOCK & request**<br><br>`STOCK` gives one unified view of everything in the connected vaults. From there you can request items straight into free T.BOX slots. |
-| <a href="/images/2026-08-09-20-03-47.png"><img src="/images/2026-08-09-20-03-47.png" width="380" /></a> | **OPTIMIZE**<br><br>`OPTIMIZE` on the stock view walks every vault and merges unstacked stacks of the same item. |
-| <a href="/images/2026-08-09-20-02-54.png"><img src="/images/2026-08-09-20-02-54.png" width="380" /></a> | **LOGICK transfer rules**<br><br>LOGICK replaces item/fluid pipes with rule-based transfers. Rules can be `Standard`, `Provider` (pull-only) or conditional `IF` like *move wood if charcoal < 32*. |
+| <details><summary><img src="/images/2026-08-09-20-04-36.png" width="380" /></summary><div align="center"><br><img src="/images/2026-08-09-20-04-36.png" width="900" /></div></details> | **STOCK & request**<br><br>`STOCK` gives one unified view of everything in the connected vaults. From there you can request items straight into free T.BOX slots. |
+| <details><summary><img src="/images/2026-08-09-20-03-47.png" width="380" /></summary><div align="center"><br><img src="/images/2026-08-09-20-03-47.png" width="900" /></div></details> | **OPTIMIZE**<br><br>`OPTIMIZE` on the stock view walks every vault and merges unstacked stacks of the same item. |
+| <details><summary><img src="/images/2026-08-09-20-02-54.png" width="380" /></summary><div align="center"><br><img src="/images/2026-08-09-20-02-54.png" width="900" /></div></details> | **LOGICK transfer rules**<br><br>LOGICK replaces item/fluid pipes with rule-based transfers. Rules can be `Standard`, `Provider` (pull-only) or conditional `IF` like *move wood if charcoal < 32*. |
 
 ---
 
@@ -100,9 +100,9 @@ How well a specific machine works comes down to what the mod exposes to the CC:T
 
 | Interface | Description |
 | :--- | :--- |
-| <a href="/images/2026-08-09-19-51-42.png"><img src="/images/2026-08-09-19-51-42.png" width="380" /></a> | **RedNet remote**<br><br>Run `remote_control` on a pocket computer with an Ender Modem to order items and follow live progress from anywhere in loaded chunks. |
-| <a href="/images/2026-08-09-19-51-12.png"><img src="/images/2026-08-09-19-51-12.png" width="380" /></a> | **GitHub sync**<br><br>Recipe library can be exported/imported via a GitHub Personal Access Token. The token is masked in the UI and dropped from RAM on reboot. |
-| <a href="/images/2026-08-09-19-50-38.png"><img src="/images/2026-08-09-19-50-38.png" width="380" /></a> | **ntfy push**<br><br>Optional push notifications to your phone when a craft finishes. |
+| <details><summary><img src="/images/2026-08-09-19-51-42.png" width="380" /></summary><div align="center"><br><img src="/images/2026-08-09-19-51-42.png" width="900" /></div></details> | **RedNet remote**<br><br>Run `remote_control` on a pocket computer with an Ender Modem to order items and follow live progress from anywhere in loaded chunks. |
+| <details><summary><img src="/images/2026-08-09-19-51-12.png" width="380" /></summary><div align="center"><br><img src="/images/2026-08-09-19-51-12.png" width="900" /></div></details> | **GitHub sync**<br><br>Recipe library can be exported/imported via a GitHub Personal Access Token. The token is masked in the UI and dropped from RAM on reboot. |
+| <details><summary><img src="/images/2026-08-09-19-50-38.png" width="380" /></summary><div align="center"><br><img src="/images/2026-08-09-19-50-38.png" width="900" /></div></details> | **ntfy push**<br><br>Optional push notifications to your phone when a craft finishes. |
 
 ---
 
@@ -117,9 +117,11 @@ How well a specific machine works comes down to what the mod exposes to the CC:T
 - The Advanced Computer must sit directly to the left of the monitor wall — the layout code assumes this.
 - Keep an eye on free vault and tank space at the top of the monitor. If there's nowhere to unload, collection tasks stall.
 
-| Reference shot | Reference shot |
-| :---: | :---: |
-| <a href="/images/2026-08-09-21-08-50.png"><img src="/images/2026-08-09-21-08-50.png" width="380" /></a> | <a href="/images/2026-08-09-20-57-35.png"><img src="/images/2026-08-09-20-57-35.png" width="380" /></a> |
+<p align="center">
+  <details><summary><img src="/images/2026-08-09-21-08-50.png" width="380" /></summary><div align="center"><br><img src="/images/2026-08-09-21-08-50.png" width="900" /></div></details>
+  &nbsp;&nbsp;
+  <details><summary><img src="/images/2026-08-09-20-57-35.png" width="380" /></summary><div align="center"><br><img src="/images/2026-08-09-20-57-35.png" width="900" /></div></details>
+</p>
 
 In practice, most machines from most mods should work with Modern Industrialization / Create / Greg_th / PneumaticCraft, etc. For some mods, such as Mekanism, which don't have integration with CC, you'll need workarounds — for example, chests for transferring items.
 
